@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Pour Toi ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Une surprise rien que pour toi 💕</h1>
+
+  <!-- Musique -->
+  <audio id="musique" autoplay loop>
+    <source src="musique.mp3" type="audio/mpeg">
+    Ton navigateur ne supporte pas l'audio.
+  </audio>
+
+  <!-- Photo souvenir -->
+  <img id="photo" src="photo1.jpg" alt="Souvenir" width="300">
+
+  <div class="buttons">
+    <button onclick="changerPhoto()">Changer la photo 📸</button>
+    <button onclick="message()">Un petit mot 💌</button>
+  </div>
+
+  <p id="texte"></p>
+
+  <!-- Question -->
+  <div id="question">
+    <h2>Est-ce que tu veux bien être mon copain pour toujours ? 💖</h2>
+    <button id="btnOui" onclick="accepter()">Oui 💍</button>
+    <button id="btnNon" onmouseover="fuir(this)">Non 😅</button>
+  </div>
+
+  <!-- Image pleine page -->
+  <div id="overlay">
+    <img src="grand-amour.jpg" alt="Amour infini">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
